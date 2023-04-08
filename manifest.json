@@ -1,0 +1,19 @@
+{
+    "name": "Rapantix helper",
+    "version": "1.0",
+    "description": "Extension that help finding the rapantix song by testing a list of common words",
+    "manifest_version": 3,
+    "author": "Nathan Genaudeau",
+    "permissions": ["scripting", "activeTab"],
+    "host_permissions": ["*://*.rapminerz.io/*"],
+    "content_scripts": [
+        {
+            "matches": ["*://*.rapminerz.io/*"],
+            "js": ["index.js"]
+        }
+    ],
+    "action": {
+        "default_title": "Rapantix helper",
+        "default_popup": "index.html"
+    }
+}
